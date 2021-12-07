@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+</head>
+<meta charset="utf-8">
+
+<body>
+    <h2>Javscript - Object Constructor-2</h2>
+
+
+    <script>
+        //object Constructor
+
+        function fruit(name, color, shape) {
+            this.name = name;
+            this.color = color;
+            this.shape = shape;
+
+            this.describe = function() {
+                return 'A' + this.name + ' is the color ' + this.color + 'shape is ' + this.shape;
+            }
+        }
+        var apple = new fruit('apple', 'red', 'round');
+        var lemon = new fruit('lemon', 'yellow', 'oval');
+
+        console.log(lemon.describe());
+    </script>
+</body>
+
+</html>

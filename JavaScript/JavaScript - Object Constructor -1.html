@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+</head>
+<meta charset="utf-8">
+
+<body>
+    <h2>Javscript - Object Constructor</h2>
+
+
+    <script>
+        //object Constructor
+
+        var apple = new Object();
+        apple.color = 'red';
+        apple.shape = 'round';
+
+        apple.describe = function() {
+            return 'An apple is the color ' + this.color + 'and shape is ' + this.shape;
+        }
+        console.log(apple.describe());
+    </script>
+
+</body>
+
+</html>
