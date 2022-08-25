@@ -1,0 +1,41 @@
+<!--
+Write a JavaScript program to swap pairs of adjacent digits of a given integer of even length.
+Input: 1234
+Output: 2143
+-->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Swap pairs of adjacent digits of a given integer of even length.</title>
+</head>
+<body>
+	<script>
+		function swap_adjacent_digits(n) 
+		{
+			if (n%2!=0)
+			{
+				return "False, Number must be even to swap";
+			}
+
+			var result = 0,
+			x = 1;
+			while (n != 0) {
+				var dg1 = n % 10,
+				dg2 = ((n - dg1) / 10) % 10;
+				result =result+ x * (10 * dg1 + dg2);
+				n = Math.floor(n / 100);
+				x =x* 100;
+			}
+			return result;
+		}
+
+		document.write(swap_adjacent_digits(1234)+"<br>");
+		document.write(swap_adjacent_digits(123456)+"<br>");
+		document.write(swap_adjacent_digits(12345)+"<br>");
+	</script>
+
+
+</body>
+</html>

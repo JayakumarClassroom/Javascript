@@ -1,0 +1,44 @@
+<!--Write a JavaScript program which compute, the average marks of the following students Then, this average is used to determine the corresponding grade.-->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title>Compute the average marks and grade</title>
+</head>
+<body>
+<script>
+var students = [['David', 80], ['Jay', 77], ['Micheal', 88], ['John', 95], ['Nicole', 68]];
+
+var Avgmarks = 0;
+
+for (var i=0; i < students.length; i++) 
+{
+	Avgmarks += students[i][1];
+	
+	var avg = (Avgmarks/students.length);
+}
+
+alert("Average grade: " + (Avgmarks)/students.length);
+
+				if (avg < 60){
+					document.write("Grade : F");      
+					} 
+				else if (avg < 70)
+				 {
+					document.write("Grade : D"); 
+				} 
+				else if (avg < 80) 
+						 {
+				document.write("Grade : C"); 
+				} 
+				else if (avg < 90) {
+					document.write("Grade : B"); 
+				} 
+				else if (avg < 100) {
+				document.write("Grade : A"); 
+}
+
+  </script>
+</body>
+</html>

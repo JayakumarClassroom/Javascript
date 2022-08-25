@@ -1,0 +1,24 @@
+<!--Write a JavaScript program to sum the multiples of 3 and 5 under 100.-->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+<script>
+	var sum = 0;
+	var x=0;
+	for (x = 0; x < 100; x++)
+	{
+		if (x % 3 === 0 || x % 5 === 0)
+		{
+		   sum += x;
+		}
+	}
+	document.write(sum,"<br>");
+
+</script>
+</body>
+</html>

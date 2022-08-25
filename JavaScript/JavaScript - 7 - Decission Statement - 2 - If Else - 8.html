@@ -1,0 +1,31 @@
+<!--Write a JavaScript program that accept two integers and display the larger. -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset=utf-8 />
+	<title></title>
+</head>
+
+<body>
+	<script>
+		var num1, num2;
+		num1 = window.prompt("Input the First integer", "0");
+		num2 = window.prompt("Input the second integer", "0");
+		if (parseInt(num1) > parseInt(num2)) {
+			document.write("The larger of " + num1 + " and " + num2 + " is " + num1 + ".");
+		}
+		elseif(parseInt(num2) > parseInt(num1))
+		{
+			document.write("The larger of " + num1 + " and " + num2 + " is " + num2 + ".");
+		}                  
+		else
+		{
+			document.write("The values " + num1 + " and " + num2 + " are equal.");
+		}
+	</script>
+
+</body>
+
+</html>

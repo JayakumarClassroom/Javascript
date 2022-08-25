@@ -1,0 +1,29 @@
+<!--Write a JavaScript program to compute the greatest common divisor (GCD) of two positive integers.-->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+<script>
+var a = 2154; //First number
+var b = 458;  //Second number 
+var gcd;
+while (a!=b)
+{
+	if (a>b)
+	{
+		a = a -b;
+	}
+	else
+	{
+		b = b - a;
+	}
+}
+gcd = a;
+document.write(gcd);
+</script>
+</body>
+</html>
