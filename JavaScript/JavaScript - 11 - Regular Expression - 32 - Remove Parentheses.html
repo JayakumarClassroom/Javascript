@@ -1,0 +1,18 @@
+	<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript Form Validation: Remove Parentheses</title>
+	<style>body{font-family:Verdana;}</style>
+</head>
+	
+<body>
+<script>
+	var demoString = "(123)-45-5675";
+	var regex = /[() -]+/g;
+	var replacedString = demoString.replace(regex, " ");
+	document.write("The Original String was : " + demoString);
+	document.write("<br>The replaced String : " + replacedString);
+</script>
+	
+</body>
+</html>

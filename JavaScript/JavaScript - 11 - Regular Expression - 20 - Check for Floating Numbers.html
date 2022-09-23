@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>JavaScript form validation - check a Floating Number</title>
+<style>
+	li {list-style-type: none;
+	font-size: 16pt;
+	}
+	.mail {
+	margin: auto;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	width: 400px;
+	background : #D8F1F8;
+	border: 1px soild silver;
+	}
+	.mail h2 {
+	margin-left: 38px;
+	}
+	input {
+	font-size: 20pt;
+	}
+	input:focus, textarea:focus{
+	background-color: lightyellow;
+	}
+	input submit {
+	font-size: 12pt;
+	}
+	.rq {
+	color: #FF0000;
+	font-size: 10pt;
+	}
+
+</style>
+</head>
+<body onload='document.form1.text1.focus()'>
+<div class="mail">
+<h2>Check whether the field input contains a number with no exponent, mandatory integer and fraction and optional sign</h2>
+<form name="form1" action="#">
+<ul>
+<li><input type='text' name='text1'/></li><li>&nbsp;</li>
+<li><input type="submit" name="submit" value="Submit" onclick="CheckDecimal(document.form1.text1)"/></li>
+<li>&nbsp;</li>
+</ul>
+</form>
+</div>
+<script>
+	function CheckDecimal(inputtxt) 
+	{ 
+	var decimal=  /^[-+]?[0-9]+\.[0-9]+$/; 
+	if(inputtxt.value.match(decimal)) 
+	{ 
+	alert('Correct, try another...')
+	return true;
+	}
+	else
+	{ 
+	alert('Wrong...!')
+	return false;
+	}
+	}
+</script>
+</body>
+</html>

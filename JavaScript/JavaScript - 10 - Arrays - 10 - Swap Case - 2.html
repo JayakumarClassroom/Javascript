@@ -1,0 +1,36 @@
+<!--Write a JavaScript program which accept a string as input and swap the case of each character. For example if you input 'JayaKumaR Sadhasivam VIT' the output should be 'jAYAkUMAr sADHASIVAM vit'. -->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title></title>
+</head>
+<body>
+<script>
+	str = 'JayaKumaR Sadhasivam VIT';
+	var UPPER = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+	var LOWER = 'abcdefghijklmnopqrstuvwxyz';
+	var result = [];
+		
+		for(var x=0; x<str.length; x++)
+		{
+			if(UPPER.indexOf(str[x]) !== -1)
+			{
+				result.push(str[x].toLowerCase());
+			}
+			else if(LOWER.indexOf(str[x]) !== -1)
+			{
+				result.push(str[x].toUpperCase());
+			}
+			else 
+			{
+				result.push(str[x]);
+			}
+		}
+	document.write(result.join(''));
+
+</script>
+</body>
+</html>

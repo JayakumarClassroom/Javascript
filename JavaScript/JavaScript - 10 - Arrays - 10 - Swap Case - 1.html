@@ -1,0 +1,35 @@
+<!--Write a JavaScript program which accept a string as input and swap the case of each character. -->
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset=utf-8 />
+    <title></title>
+</head>
+
+<body>
+    <script>
+        var swapCase = function (letters) {
+            var newLetters = "";
+            for (var i = 0; i < letters.length; i++) {
+                if (letters[i] === letters[i].toLowerCase()) {
+                    newLetters += letters[i].toUpperCase();
+                } else {
+                    newLetters += letters[i].toLowerCase();
+                }
+            }
+            document.write(newLetters);
+            return newLetters;
+        }
+
+        var text = 'So, today we have REALLY good day';
+
+        var swappedText = swapCase(text); // "sO, TODAY WE HAVE really GOOD DAY"
+
+
+    </script>
+</body>
+
+</html>
