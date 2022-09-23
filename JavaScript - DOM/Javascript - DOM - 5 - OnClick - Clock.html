@@ -1,0 +1,16 @@
+<html>
+
+<head>
+    <script>
+        function clock() {
+            document.getElementById("p1").innerHTML = new Date();
+        }
+    </script>
+</head>
+
+<body>
+    <p id="p1">Digital Clock will be displayed now</p>
+    <button onclick="setInterval(clock,1000)">Click it</button>
+</body>
+
+</html>

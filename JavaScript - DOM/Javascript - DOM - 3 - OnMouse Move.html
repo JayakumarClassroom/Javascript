@@ -1,0 +1,18 @@
+<html>
+
+<head>
+    <script>
+        var i = 1;
+        function moveright() {
+            document.getElementById('header').style.position = "relative";
+            document.getElementById('header').style.left = i;
+            i++;
+        }
+    </script>
+</head>
+
+<body onmousemove="moveright()">
+    <h1 id="header"> Move the mouse over this page </h1>
+</body>
+
+</html>

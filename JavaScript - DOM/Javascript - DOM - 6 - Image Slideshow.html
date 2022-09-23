@@ -1,0 +1,22 @@
+<html>
+
+<head>
+    <script>
+        var i = 0;
+        function slideshow() {
+            var imgs = ["img1.jpg", "img2.jpg", "img3.jpg", "img4.jpg", "img5.jpg"];
+            document.getElementById("c").src = imgs[i];
+            i++;
+            if (i == 3)
+                i = 0;
+            setTimeout(slideshow, 500);
+
+        }
+    </script>
+</head>
+
+<body onload="slideshow()">
+    <img id="c" src="img1.jpg" height="500" width="500" align="center">
+</body>
+
+</html>

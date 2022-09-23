@@ -1,0 +1,27 @@
+<html>
+
+<head>
+    <script type="text/javascript">
+        function blinking_header() {
+            if (document.getElementById('blink').style.color == "green") {
+                document.getElementById('blink').style.color = "blue";
+            }
+            else {
+                document.getElementById('blink').style.color = "green";
+            }
+            timer = setTimeout("blinking_header()", 500);
+        }
+
+        function stoptimer() {
+            clearTimeout(timer);
+        }
+    </script>
+</head>
+
+<body onload="blinking_header()" onunload="stoptimer()">
+    <Center>
+        <h1 id="blink">Internet and Web Programming</h1>
+    </Center>
+</body>
+
+</html>
